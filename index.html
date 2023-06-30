@@ -38,6 +38,8 @@
         justify-content: center;
         background-color: none; /* Add background color */
         margin: 0 auto; /* Center the container horizontally */
+        pointer-events: all;
+        z-index: 2;
       }
 
       .container .project {
@@ -87,6 +89,16 @@
     </div>
     <div class="container">
       <a
+        href="test/"
+        class="project cv-link"
+        data-cover-src="kor1.jpg"
+        data-image-top="20%"
+        data-image-left="10%"
+        data-image-width="400px"
+        data-image-height="auto"
+        >test</a
+      >
+      <a
         href="deep/"
         class="project cv-link"
         data-cover-src="kor1.jpg"
@@ -120,7 +132,7 @@
         href="stilllife/"
         class="project cv-link"
         data-cover-src="stilllife1.jpg"
-        data-image-top="90%"
+        data-image-top="80%"
         data-image-left="20%"
         data-image-width="600px"
         data-image-height="auto"

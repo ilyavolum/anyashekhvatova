@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
         margin: 0;
@@ -87,15 +88,7 @@
       }
       @media only screen and (max-width: 700px) {
         .container .project {
-          font-size: 4.5vmax;
-        }
-      }
-      @media only screen and (max-width: 370px) {
-        /* mobile */
-
-        .container .project {
-          font-size: 3.5vmax;
-          justify-content: left;
+          font-size: 4.2vmax;
         }
       }
       @media only screen and (max-width: 420px) {
@@ -109,7 +102,19 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          font-size: 50px;
+          font-size: 18px;
+        }
+        .container .project {
+          padding-bottom: 10px;
+        }
+        .container {
+          justify-content: left;
+          top: 70px;
+        }
+        .container .project::after {
+          content: "";
+          padding-left: 0px;
+          color: black; /* Set the color of the underscore to black */
         }
       }
 

@@ -3,15 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <style>
-   
-            body {
+      body {
         margin: 0;
         padding: 0;
         font-family: "SF UI Display", -apple-system, BlinkMacSystemFont,
           "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
           "Droid Sans", "Helvetica Neue", sans-serif;
       }
-
 
       .hiddenimg {
         display: none;
@@ -21,8 +19,6 @@
         font-weight: normal;
         color: rgb(0, 0, 0);
         z-index: 99;
-        
-      
       }
 
       .project a {
@@ -31,16 +27,11 @@
         z-index: 99;
       }
 
-
-
       .project:hover ~ .hiddenimg {
         display: block;
         position: absolute;
         z-index: 2;
       }
-
- 
-
 
       .header-container {
         position: fixed;
@@ -78,7 +69,6 @@
         line-height: 1.2; /* Set the line height to a fixed value */
         padding-right: 5px;
         font-size: 5vmax;
-        
       }
 
       .container .project::after {
@@ -96,26 +86,38 @@
         text-decoration: none;
       }
       @media only screen and (max-width: 700px) {
-
         .container .project {
           font-size: 4.5vmax;
         }
+      }
+      @media only screen and (max-width: 370px) {
+        /* mobile */
 
-}
-@media only screen and (max-width: 580px) {
+        .container .project {
+          font-size: 3.5vmax;
+          justify-content: left;
+        }
+      }
+      @media only screen and (max-width: 420px) {
+        /* mobile */
 
-.container .project {
-  font-size: 3.5vmax;
-}
-
-}
+        .header-container {
+          position: fixed;
+          top: 16px;
+          left: 20px;
+          right: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 50px;
+        }
+      }
 
       .cv-link:hover,
       .cv-link:active {
         color: #ff0000; /* Set hover and active link color */
         text-decoration: none;
       }
-      
     </style>
   </head>
   <body>
@@ -126,7 +128,8 @@
     <div class="container">
       <div>
         <span class="project">
-        <a href="/deep/" class="project">deep dive room 2022</a></span>
+          <a href="/deep/" class="project">deep dive room 2022</a></span
+        >
         <span
           class="hiddenimg"
           style="margin-top: 50px; left: calc(100% - 200px)"
@@ -134,7 +137,8 @@
         /></span>
       </div>
       <div>
-        <span class="project"><a href="/deep/" class="project">kаffа 2022</a></span
+        <span class="project"
+          ><a href="/deep/" class="project">kаffа 2022</a></span
         ><span
           class="hiddenimg"
           style="margin-top: 50px; left: calc(100% - 600px)"
@@ -142,7 +146,8 @@
         /></span>
       </div>
       <div>
-        <span class="project"><a href="/deep/" class="project">random t room 2018-2023</a></span
+        <span class="project"
+          ><a href="/deep/" class="project">random t room 2018-2023</a></span
         ><span
           class="hiddenimg"
           style="margin-top: 50px; left: calc(100% - 600px)"
@@ -150,7 +155,10 @@
         /></span>
       </div>
       <div>
-        <span class="project"><a href="/deep/" class="project">still life coffee situation 2021</a></span
+        <span class="project"
+          ><a href="/deep/" class="project"
+            >still life coffee situation 2021</a
+          ></span
         ><span
           class="hiddenimg"
           style="margin-top: 50px; left: calc(100% - 600px)"
@@ -158,7 +166,10 @@
         /></span>
       </div>
       <div>
-        <span class="project"><a href="/deep/" class="project">collection of inedible desserts 2020</a></span
+        <span class="project"
+          ><a href="/deep/" class="project"
+            >collection of inedible desserts 2020</a
+          ></span
         ><span
           class="hiddenimg"
           style="margin-top: 50px; left: calc(100% - 600px)"
@@ -166,7 +177,8 @@
         /></span>
       </div>
       <div>
-        <span class="project"><a href="/deep/" class="project">defect coffee shop 2020</a></span
+        <span class="project"
+          ><a href="/deep/" class="project">defect coffee shop 2020</a></span
         ><span
           class="hiddenimg"
           style="margin-top: 50px; left: calc(100% - 600px)"
@@ -174,7 +186,10 @@
         /></span>
       </div>
       <div>
-        <span class="project"><a href="/deep/" class="project">random coffee experiments 2019-2020</a></span
+        <span class="project"
+          ><a href="/deep/" class="project"
+            >random coffee experiments 2019-2020</a
+          ></span
         ><span
           class="hiddenimg"
           style="margin-top: 50px; left: calc(100% - 600px)"
@@ -182,12 +197,14 @@
         /></span>
       </div>
       <div>
-        <span class="project"><a href="/deep/" class="project">420 coffeeshop 2019</a></span
+        <span class="project"
+          ><a href="/deep/" class="project">420 coffeeshop 2019</a></span
         ><span
           class="hiddenimg"
           style="margin-top: 50px; left: calc(100% - 600px)"
           ><img src="1.jpg" width="250"
         /></span>
       </div>
-      </body>
+    </div>
+  </body>
 </html>

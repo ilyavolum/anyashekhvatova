@@ -2,16 +2,15 @@
 <html>
   <head>
     <style>
-
       h2 {
-        font-size: 1.8vmax;
+        font-size: 1.5vmax;
       }
-      h3 {
-        font-size: 1.8vmax;
-      }
+
       body {
         -webkit-font-smoothing: antialiased;
-        font-family: "SF UI Display", sans-serif;
+        font-family: "SF UI Display", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
+          "Droid Sans", "Helvetica Neue", sans-serif;
         margin: 0;
         padding: 0;
       }
@@ -65,24 +64,14 @@
 
       .cv-container {
         position: fixed;
-
         top: 84px;
         left: 20px;
-        right: 200px;
+        right: 550px;
         display: flex;
         justify-content: left;
         flex-flow: row wrap;
-
         align-items: left;
         background-color: none; /* Add background color */
-      }
-
-      .cv-container h1 {
-        justify-content: left;
-        text-decoration: none;
-        font-weight: 400;
-        margin-top: 0;
-        margin-bottom: 50px;
       }
 
       .cv-container h2 {
@@ -91,14 +80,7 @@
         font-weight: 400;
         margin-top: 0;
       }
-      .cv-container h3 {
-        justify-content: left;
-        text-decoration: none;
-        font-weight: 400;
-        margin-top: 0;
-      }
 
-      .cv-container h3,
       .cv-container p {
         margin: 0;
       }
@@ -107,6 +89,30 @@
         padding-left: 20px;
         margin: 0;
         text-decoration: none;
+      }
+
+      /* Mobile Styles */
+      @media (max-width: 600px) {
+        .header-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .right-text {
+          margin-top: 8px;
+        }
+
+        .cv-container {
+          position: static;
+          width: auto;
+          margin-top: 120px;
+          padding: 16px;
+        }
+
+        .footer {
+          position: static;
+          margin-top: 16px;
+        }
       }
     </style>
   </head>
@@ -117,28 +123,29 @@
     </div>
 
     <div class="cv-container">
-
       <h2>
-        E: ashekhvatova@gmail.com<br><br> 
-        Born 1990 in Maiysky (North Caucasus, Russia)</p>
+        <p>E: ashekhvatova@gmail.com</p>
+        <br />
+        <p>Born 1990 in Maiysky (North Caucasus, Russia)</p>
         <p>Lived in Moscow, Russia until 2022</p>
- <p>Currently lives and works in Lisbon, Portugal</p>
- <br/>
-Education:
-<p>__2020-2021 Online institute Sreda Obucheniya, specialty artist</p>
-<p>__2009-2012 Moscow State University, faculty sociology</p> 
-<p>__2013-2014 Russian State University for the Humanities, faculty
-sociology</p>
-</p>
-</h2>
-<p>
-<br/>
-</p>
-<h3>
-        Anya Shekhvatova is a multidisciplinary artist who works with
-        thought-provoking installations that explore the complexities of the
-        human experience. Her pieces are a peculiar mixture of science,
-        tradition, and sensory stimulus.
+        <p>Currently lives and works in Lisbon, Portugal</p>
+        <br />
+        Education:
+        <p>__2020-2021 Online institute Sreda Obucheniya, specialty artist</p>
+        <p>__2009-2012 Moscow State University, faculty sociology</p>
+        <p>
+          __2013-2014 Russian State University for the Humanities, faculty
+          sociology
+        </p>
+        <br />
+
+        <p>
+          Anya Shekhvatova is a multidisciplinary artist who works with
+          thought-provoking installations that explore the complexities of the
+          human experience. Her pieces are a peculiar mixture of science,
+          tradition, and sensory stimulus.
+        </p>
+
         <p>
           She touches upon the themes of a human's place in the world, their
           sense of self, the connection between the spiritual, sensual, and
@@ -153,9 +160,10 @@ sociology</p>
           technologies, to create a multi-sensory experience for the viewer.
           Anya's approach to sensory perception extends beyond sight and sound,
           encompassing taste, touch, and smell to create a truly immersive
-          artistic encounter.</p>
-</h3>
-</div>
+          artistic encounter.
+        </p>
+      </h2>
+    </div>
 
     <div class="footer">
       <a href="/" class="cv-link">BACK</a>

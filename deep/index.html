@@ -155,6 +155,14 @@
         }
       }
     </style>
+    <script>
+      // JavaScript code here
+      if (/mobile/i.test(navigator.userAgent) && !location.hash) {
+        setTimeout(function () {
+          window.scrollTo(0, 1);
+        }, 1000);
+      }
+    </script>
   </head>
   <body>
     <div class="header-container">

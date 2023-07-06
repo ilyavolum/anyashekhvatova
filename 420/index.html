@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
     <style>
       h2 {
-        font-size: 1.5vmax;
+        font-size: 1.8vmax;
         font-weight: normal;
         margin-top: 0px;
         max-width: 1300px;
-        min-width: 480px;
       }
 
       body {
@@ -26,7 +29,7 @@
         align-items: flex-start;
         margin: 20px;
         margin-top: 50px;
-        margin-right: 100px;
+        margin-right: 10px;
         font-size: 30px;
       }
 
@@ -37,10 +40,6 @@
         color: #000000;
       }
 
-      .text h2 {
-        align-self: flex-start;
-      }
-
       .header-container {
         position: fixed;
         top: 16px;
@@ -49,10 +48,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 20px;
+        font-size: 1.5vmax;
         z-index: 3;
       }
-
       .cv-link {
         color: #000000;
         /* Set initial link color */
@@ -93,15 +91,16 @@
 
       .scroll-gallery img {
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         /* Add some spacing between images */
-        max-width: 100%;
+
         /* Ensure the images shrink proportionally */
       }
 
       @media only screen and (max-width: 1400px) {
         .container {
           font-size: 25px;
+          margin-right: 20px;
         }
 
         .title-container h1 {
@@ -117,35 +116,32 @@
           /* Adjust the image size as needed, subtracting 20px for spacing */
         }
       }
-
-      @media only screen and (max-width: 800px) {
-        .title-container h1 {
-          font-size: 5vmax;
+      @media only screen and (max-width: 420px) {
+        .header-container {
+          font-size: 1.8vmax;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          background-color: white;
+          padding: 10px;
         }
-
-        .text h2 {
-          font-size: 2vmax;
+        .footer {
+          font-size: 1.8vmax;
+          left: 10px;
+          right: 10px;
+          bottom: 8px;
         }
-      }
-
-      @media only screen and (max-width: 600px) {
         .container {
-          font-size: 15px;
+          max-width: 400px;
+          margin: 10px;
+          top: 20px;
         }
-
+        .scroll-gallery img {
+          max-width: calc(100% - 20px);
+          /* Adjust the image size as needed, subtracting 20px for spacing */
+        }
         .title-container h1 {
-          font-size: 5vmax;
-        }
-
-        .text h2 {
-          font-size: 2vmax;
-        }
-      }
-
-      @media only screen and (max-width: 480px) {
-        .container {
-          margin-left: 20px;
-          margin-right: 20px;
+          line-height: 5vmax;
         }
       }
     </style>
@@ -157,7 +153,6 @@
       </div>
       <a class="right-text cv-link" href="/CV.html">CV</a>
     </div>
-
     <div class="scroll-gallery">
       <img src="Frame3a.jpg" alt="Image 1" />
       <img src="Frame4.jpg" alt="Image 1" />

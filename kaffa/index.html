@@ -27,12 +27,6 @@
           "Droid Sans", "Helvetica Neue", sans-serif;
       }
 
-      .image-text {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 20px;
-      }
-
       .container {
         position: fixed;
         display: flex;
@@ -66,7 +60,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 20px;
+
         z-index: 3;
       }
 
@@ -116,7 +110,10 @@
         /* Ensure the images shrink proportionally */
       }
 
-      @media only screen and (max-width: 1400px) {
+      @media only screen and (min-width: 350px) {
+        .header-container {
+          font-size: 2vmax;
+        }
         .container {
           font-size: 25px;
           margin-left: 20px;
@@ -140,8 +137,9 @@
         }
       }
 
-      @media only screen and (max-width: 800px) {
-        .container {
+      @media only screen and (min-width: 1024px) {
+        .header-container {
+          font-size: 1.5vmax;
         }
 
         .title-container h1 {
@@ -160,28 +158,6 @@
           margin-right: 120px;
           font-weight: normal;
           color: #ff0000;
-        }
-      }
-
-      @media only screen and (max-width: 600px) {
-        .container {
-          font-size: 15px;
-        }
-
-        .title-container h1 {
-          font-size: 5vmax;
-        }
-
-        .text h2 {
-          font-size: 0.8vmax;
-          margin-left: 20px;
-        }
-      }
-
-      @media only screen and (max-width: 480px) {
-        .container {
-          margin-left: 20px;
-          margin-right: 20px;
         }
       }
     </style>

@@ -29,7 +29,9 @@
         margin-right: 10px;
         position: sticky;
       }
-
+      body::-webkit-scrollbar {
+        display: none;
+      }
       body {
         -webkit-font-smoothing: antialiased;
         margin: 0;
@@ -63,7 +65,7 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        font-size: clamp(20px, 2vw, 30px);
+        font-size: clamp(20px, 2vw, 25px);
         z-index: 3;
       }
       .cv-link {
@@ -112,6 +114,9 @@
         pointer-events: none;
         z-index: 0;
         /* Ensure the gallery is above the text */
+      }
+      .scroll-gallery::-webkit-scrollbar {
+        display: none;
       }
 
       .scroll-gallery img {

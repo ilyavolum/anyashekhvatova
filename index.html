@@ -56,7 +56,7 @@
         justify-content: space-between;
         align-items: center;
         font-size: clamp(15px, 2vw, 15px);
-        z-index: 3;
+        z-index: 100;
       }
 
       .cv-link {
@@ -72,7 +72,7 @@
       }
 
       .container {
-        position: fixed;
+        position: absolute;
         height: auto;
         top: 70px;
         left: 10px;
@@ -82,6 +82,7 @@
         flex-wrap: wrap;
         justify-content: center;
         z-index: 99;
+        float: right;
       }
 
       .container .project {

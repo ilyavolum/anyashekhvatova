@@ -153,6 +153,11 @@
           padding-top: 10px;
           position: sticky;
         }
+        ::-webkit-scrollbar {
+          -webkit-appearance: none;
+          width: 0px;
+          background: transparent;
+        }
         .title-container h1 {
           line-height: 5vmax;
           position: sticky;
@@ -172,6 +177,12 @@
       @media only screen and (min-width: 768px) {
         .title-container h1 {
           margin-top: 80px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        ::-webkit-scrollbar {
+          -webkit-appearance: none;
+          overflow: hidden;
         }
       }
 
@@ -257,10 +268,10 @@
     </div>
 
     <div class="title-container">
-      <h1>420 coffeeshop, mutabor club, moscow, 2019</h1>
-    </div>
-    <div class="title-container">
       <h2>
+        <p style="font-size: clamp(50px, 8vw, 85px); margin-bottom: 10px">
+          coffeeshop, mutabor club, moscow, 2019
+        </p>
         This project to reveal the connections between the spiritual and the
         material. Making her dream come true, Anya opened 420 coffeeshop, which
         worked until 420 cups of coffee were made. The artist served each cup

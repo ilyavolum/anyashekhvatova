@@ -95,16 +95,6 @@
         z-index: 999;
       }
 
-      .container .project::after {
-        content: "";
-        padding-left: 0px;
-        color: rgb(0, 0, 0); /* Set the color of the underscore to black */
-      }
-
-      .container .project:last-child::after {
-        content: "";
-      }
-
       .cv-link {
         color: #000000; /* Set initial link color */
         text-decoration: none;
@@ -133,6 +123,13 @@
           content: "";
           padding-left: 0px;
           color: black; /* Set the color of the underscore to black */
+        }
+        .project:hover ~ .hiddenimg {
+          display: none;
+          position: fixed;
+          right: 10px;
+          top: 10px;
+          bottom: 10px;
         }
       }
 

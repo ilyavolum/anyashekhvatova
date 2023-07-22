@@ -123,7 +123,7 @@
         text-decoration: none;
       }
 
-      @media only screen and (min-width: 300px) and (max-width: 420px) {
+      @media screen and (max-width: 420px) {
         .project:hover,
         .project:active {
           color: #000000; /* Set hover and active link color */
@@ -173,6 +173,14 @@
       .project:active {
         color: #ff0000; /* Set hover and active link color */
         text-decoration: none;
+      }
+
+      @media screen and (max-width: 420px) {
+        .project:hover,
+        .project:active {
+          color: #000000; /* Set hover and active link color */
+          text-decoration: none;
+        }
       }
     </style>
   </head>
@@ -247,6 +255,3 @@
     </div>
   </body>
 </html>
-function isTouchDevice() { var el = document.createElement('div');
-el.setAttribute('ongesturestart', 'return;'); // or try "ontouchstart" return
-typeof el.ongesturestart === "function"; }

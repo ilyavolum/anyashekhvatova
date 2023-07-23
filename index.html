@@ -97,7 +97,7 @@
       .container {
         position: absolute;
         height: auto;
-
+        top: 60px;
         left: 10px;
         right: 20px;
         display: flex;
@@ -150,11 +150,7 @@
           right: 10px;
           font-size: clamp(15px, 5vw, 90px);
         }
-        .container .project::after {
-          content: "";
-          padding-left: 0px;
-          color: black; /* Set the color of the underscore to black */
-        }
+
         .project:hover ~ .hiddenimg {
           display: none;
           position: fixed;

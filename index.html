@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
+<head>
+  <meta charset="UTF-8">
+  
+  <style>
+    :root {
+      --container-font-size: 80px;
+      --project-font-size: 0px;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'SF UI Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    }
+=======
   <head>
     <meta charset="utf-8" />
     <meta
       content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
       name="viewport"
     />
+>>>>>>> 6f4d9e038b105ee88595be4aceadecc997493e89
 
     <meta
       name="description"
@@ -43,9 +60,132 @@
         margin: 0;
         padding: 0;
 
+<<<<<<< HEAD
+    .container .project::after {
+      content: "_";
+      padding-left: 0px;
+    }
+
+    .container .project:last-child::after {
+      content: "";
+    }
+
+    .cv-link {
+      color: #000000; /* Set initial link color */
+      text-decoration: none;
+    }
+
+    .cv-link:hover,
+    .cv-link:active {
+      color: #FF0000; /* Set hover and active link color */
+      text-decoration: none;
+    }
+    .project:hover {
+      position: relative;
+    }
+
+    img {
+      position: absolute;
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-container">
+    <div class="left-text"><a>ANIAssss SHEKHVATOVA</a></div>
+    <a class="right-text cv-link" href="CV.html">CV</a>
+  </div>
+  <div class="container">
+    <a href="deep/deep.html" class="project cv-link" data-cover-src="kor1.jpg" data-image-top="20%" data-image-left="10%" data-image-width="400px" data-image-height="auto">Deep Dive Room 2022</a>
+    <a href="kaffa/kaffa.html" class="project cv-link" data-cover-src="kaffa1.jpg" data-image-top="40%" data-image-left="40%"  data-image-width="700px" data-image-height="auto">Каffа 2022</a>
+    <a href="randomt/randomt.html" class="project cv-link" data-cover-src="disco1.jpg" data-image-top="80%" data-image-left="100%"  data-image-width="200px" data-image-height="auto">Random t room 2018-2023</a>
+    <a href="stilllife/stilllife.html" class="project cv-link" data-cover-src="stilllife1.jpg" data-image-top="90%" data-image-left="20%"  data-image-width="600px" data-image-height="auto">Still life coffee situation 2021</a>
+    <a href="collection/collection.html" class="project cv-link" data-cover-src="collection1.jpg" data-image-top="0%" data-image-left="30%"  data-image-width="300px" data-image-height="auto">Collection of inedible desserts 2020</a>
+    <a href="defect/defect.html" class="project cv-link" data-cover-src="defect1.jpg" data-image-top="10%" data-image-left="50%"  data-image-width="400px" data-image-height="auto">Defect coffee shop 2020</a>
+    <a href="random/random.html" class="project cv-link" data-cover-src="random1.jpg" data-image-top="40%" data-image-left="80%"  data-image-width="400px" data-image-height="auto">Random coffee experiments 2019-2020</a>
+    <a href="420/420.html" class="project cv-link" data-cover-src="420.jpg" data-image-top="10%" data-image-left="2%"  data-image-width="600px" data-image-height="auto">420 coffeeshop 2019</a>
+  </div>
+  <img id="project-preview-image" src="" />
+  
+  <script>
+    function adjustImagePosition(project) {
+  const image = document.querySelector('img#project-preview-image');
+  const containerHeight = document.querySelector('.container').offsetHeight;
+  const containerWidth = document.querySelector('.container').offsetWidth;
+  const top = parseFloat(project.dataset.imageTop);
+  const left = parseFloat(project.dataset.imageLeft);
+
+  // Calculate the maximum top position for the image
+  const maxTop = (containerHeight - image.offsetHeight) / containerHeight * 100;
+  const maxLeft = (containerWidth - image.offsetWidth) / containerWidth * 100;
+
+  // Adjust the top position if it exceeds the maximum
+  if (top > maxTop) {
+    project.dataset.imageTop = maxTop + '%';
+  }
+  if (left > maxLeft) {
+    project.dataset.imageLeft = maxLeft + '%';
+  }
+
+  // Adjust the vertical position of the image
+  if (top === 100) {
+    image.style.top = 'auto';
+    image.style.bottom = 0;
+  } else {
+    image.style.top = project.dataset.imageTop ? project.dataset.imageTop : '50%';
+    image.style.bottom = 'auto';
+  }
+  if (left === 100) {
+    image.style.left = 'auto';
+    image.style.right = 0;
+  } else {
+    image.style.left = project.dataset.imageLeft ? project.dataset.imageLeft : '50%';
+    image.style.right = 'auto';
+  }
+
+  // Adjust the horizontal position of the image
+  image.style.left = project.dataset.imageLeft ? project.dataset.imageLeft : '50%';
+  image.style.right = project.dataset.imageRight ? project.dataset.imageRight : 'auto';
+}
+
+function adjustFontSizes() {
+  const containerWidth = document.querySelector('.container').offsetWidth;
+  const containerFontSize = containerWidth / 25 + 'px';
+  const projectFontSize = containerWidth / 20 + 'px';
+
+  document.documentElement.style.setProperty('--container-font-size', containerFontSize);
+  document.documentElement.style.setProperty('--project-font-size', projectFontSize);
+
+  const projects = document.querySelectorAll('.project');
+
+  projects.forEach((project) => {
+    adjustImagePosition(project);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  adjustFontSizes();
+  window.addEventListener('resize', adjustFontSizes);
+
+  const projects = document.querySelectorAll('.project');
+  const image = document.querySelector('img#project-preview-image');
+
+  projects.forEach((project) => {
+    project.addEventListener('mouseover', () => {
+      image.src = project.dataset.coverSrc;
+
+      const width = project.dataset.imageWidth;
+      const height = project.dataset.imageHeight;
+
+      if (width) {
+        image.style.width = width;
+      } else {
+        image.style.removeProperty('width');
+=======
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
           Helvetica, sans-serif, Oxygen, Ubuntu, Cantarell, "Fira Sans",
           "Droid Sans", "Helvetica Neue";
+>>>>>>> 6f4d9e038b105ee88595be4aceadecc997493e89
       }
 
       .hiddenimg {

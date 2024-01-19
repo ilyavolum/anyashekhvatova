@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      h2 {
+        font-size: 1.5vmax;
+        font-weight: normal;
+        margin-top: 0px;
+        max-width: 1300px;
+        min-width: 480px;
+      }
+
+      body {
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        padding: 0;
+        font-family: "SF UI Display", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
+          "Droid Sans", "Helvetica Neue", sans-serif;
+      }
+
+      .container {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px;
+        margin-top: 50px;
+        margin-right: 100px;
+        font-size: 30px;
+      }
+
+      .title-container h1 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: normal;
+        color: #000000;
+      }
+
+      .text h2 {
+        align-self: flex-start;
+      }
+
+      .header-container {
+        position: fixed;
+        top: 16px;
+        left: 20px;
+        right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        z-index: 3;
+      }
+
+      .cv-link {
+        color: #000000;
+        /* Set initial link color */
+        text-decoration: none;
+      }
+
+      .cv-link:hover,
+      .cv-link:active {
+        color: #ff0000;
+        /* Set hover and active link color */
+      }
+
+      .footer {
+        position: fixed;
+        bottom: 16px;
+        left: 20px;
+        font-size: 20px;
+        z-index: 2;
+      }
+
+      .scroll-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        /* Position the gallery absolutely */
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        /* Enable scrolling */
+        padding-top: 1000px;
+        /* Add some padding to the gallery */
+        z-index: 1;
+        /* Ensure the gallery is above the text */
+      }
+
+      .scroll-gallery img {
+        display: block;
+        margin-bottom: 20px;
+        /* Add some spacing between images */
+        max-width: 100%;
+        /* Ensure the images shrink proportionally */
+      }
+
+      @media only screen and (max-width: 420px) {
+        .container {
+          margin-left: 10px;
+          margin-right: 20px;
+          margin-top: 20px;
+        }
+        .header-container {
+          font-size: 15px;
+          left: 10px;
+          right: 10px;
+          top: 0px;
+          background-color: white;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        .scroll-gallery {
+          margin-left: 10px;
+          margin-right: 10px;
+          /* Adjust the image size as needed, subtracting 20px for spacing */
+        }
+        .footer {
+          left: 10px;
+          bottom: 0px;
+          font-size: 15px;
+          z-index: 3;
+          background-color: white;
+          padding-bottom: 10px;
+          padding-top: 10px;
+          padding-right: 600px;
+        }
+        .title-container h2 {
+          font-size: 2vmax;
+          margin-left: 20px;
+          margin-right: 30px;
+        }
+        .title-container h1 {
+          margin-top: 20px;
+          margin-bottom: 10px;
+          font-weight: normal;
+          color: #000000;
+          margin-left: 20px;
+        }
+      }
+      @media only screen and (max-width: 1400px) {
+        .scroll-gallery img {
+          max-width: calc(100% - 40px);
+          /* Adjust the image size as needed, subtracting 20px for spacing */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="left-text">
+        <a href="/" class="cv-link">ANIA SHEKHVATOVA</a>
+      </div>
+      <a class="right-text cv-link" href="/CV.html">CV</a>
+    </div>
+
+    <div class="scroll-gallery">
+      <img src="Frame3a.jpg" alt="Image 1" />
+      <img src="Frame3a.jpg" alt="Image 1" />
+      <img src="Frame3a.jpg" alt="Image 1" />
+      <img src="Frame3a.jpg" alt="Image 1" />
+      <img src="Frame3a.jpg" alt="Image 1" />
+      <img src="Frame3a.jpg" alt="Image 1" />
+      <img src="Frame3a.jpg" alt="Image 1" />
+      <img src="Frame4.jpg" alt="Image 1" />
+      <img src="Frame3a.jpg" alt="Image 1" />
+      <img src="Frame4.jpg" alt="Image 1" />
+      <img src="Frame3a.jpg" alt="Image 1" />
+      <img src="Frame4.jpg" alt="Image 1" />
+      <!-- Add more images here -->
+    </div>
+    <div class="container">
+      <div class="title-container">
+        <h1>deep dive room, armenia, 2022</h1>
+      </div>
+
+      <div class="title-container">
+        <h2>
+          Deep Dive Room is an immersive space-specific installation with video
+          and audio documentations, accompanied by a cassette audio release by
+          facial agnosia composed explicitly for the installation and being an
+          its integral sonic component. The installation itself consisted of
+          several sessions that took place in 2022 in a former lecture hall with
+          an altar made of objects found on the site-stones, bones, grasses,
+          pieces of wood and metal assembled into one volumetric composition.
+          From one perspective, they are assembled in such a way as to remind
+          one of chaos; from another, they add up to perfect order and
+          harmony-echoing the theme of duality that runs through the whole body
+          of Anya SHE's work. Heavy on symbolism and inspired by alchemical
+          transfiguration, the work is an amalgamation of science and ritual
+          that acts on various levels of perception. Inseparable from the image
+          is the sonic part of the installation: a cassette recording of a
+          awarness meditation mixed with field recordings from the mountains. A
+          meditation on sensing the space, then oneself, and finally-oneself in
+          that space, guided by the performer. To achieve a total immersion in
+          the suggested state, the sensory and olfactory channels of perception
+          are also involved. Deep Dive Room is a meditation on the intersection
+          of the physical and spiritual palnes, a search for obscure meanings
+          and interconnections by means of introspection and reimagining the
+          surroundings to catch that transcendent moment of clarity, shift one's
+          perspective and experience the time differently. <br />Video by Anya
+          Kholina.
+        </h2>
+      </div>
+      <div class="footer">
+        <div class="left-text">
+          <a href="/" class="cv-link">BACK</a>_<a
+            href="https://vimeo.com/793602868"
+            class="cv-link"
+            >VIDEO</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

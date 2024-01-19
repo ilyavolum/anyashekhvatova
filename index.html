@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=SF+UI+Display&display=swap" rel="stylesheet">
+  
   <style>
     :root {
       --container-font-size: 80px;
@@ -14,59 +15,65 @@
       padding: 0;
       font-family: 'SF UI Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     }
+=======
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+      name="viewport"
+    />
+>>>>>>> 6f4d9e038b105ee88595be4aceadecc997493e89
 
-      .header-container {
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        right: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: clamp(15px, 2vw, 15px);
-        z-index: 100;
-      }
+    <meta
+      name="description"
+      content="Anya Shekhvatova is a multidisciplinary artist who works with thought-provoking installations that explore the complexities of the human experience. Her pieces are a peculiar mixture of science, tradition, and sensory stimulus."
+    />
 
-      .cv-link {
-        color: #000000;
-        text-decoration: none;
-      }
+    <meta property="og:url" content="aniashekhvatova.com" />
+    <meta property="og:image" content="/descr.jpg" />
+    <meta property="og:image:width" content="1536" />
+    <meta property="og:image:height" content="864" />
 
-      .cv-link:hover,
-      .cv-link:active {
-        color: #ff0000;
-        text-decoration: none;
-        /* Set hover and active link color */
+    <meta name="twitter:image" content="/descr.jpg" />
+    <meta name="twitter:image:width" content="1536" />
+    <meta name="twitter:image:height" content="864" />
+    <meta
+      name="twitter:description"
+      content="Anya Shekhvatova is a multidisciplinary artist who works with thought-provoking installations that explore the complexities of the human experience. Her pieces are a peculiar mixture of science, tradition, and sensory stimulus."
+    />
+    <link rel="image_src" href="/descr.jpg" />
+    <link rel="canonical" href="/descr.jpg" />
+    <meta name="keywords" content="aniashekhvatova" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="aniashekhvatova" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <style>
+      * {
+        box-sizing: border-box;
       }
+      body {
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        padding: 0;
 
-      .container {
-        position: absolute;
-        height: auto;
-        top: 60px;
-        left: 10px;
-        right: 20px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        z-index: 99;
-        float: right;
-      }
+<<<<<<< HEAD
+    .container .project::after {
+      content: "_";
+      padding-left: 0px;
+    }
 
-      .container .project {
-        display: inline-block;
-        white-space: wrap;
-        flex-shrink: 1;
-        line-height: 1.2; /* Set the line height to a fixed value */
-        padding-right: 5px;
-        font-size: clamp(40px, 5vw, 85px);
-        z-index: 999;
-      }
+    .container .project:last-child::after {
+      content: "";
+    }
 
-      .cv-link {
-        color: #000000; /* Set initial link color */
-        text-decoration: none;
-      }
+    .cv-link {
+      color: #000000; /* Set initial link color */
+      text-decoration: none;
+    }
 
     .cv-link:hover,
     .cv-link:active {
@@ -85,7 +92,7 @@
 </head>
 <body>
   <div class="header-container">
-    <div class="left-text"><a>ANIA SHEKHVATOVA</a></div>
+    <div class="left-text"><a>ANIAssss SHEKHVATOVA</a></div>
     <a class="right-text cv-link" href="CV.html">CV</a>
   </div>
   <div class="container">
@@ -174,43 +181,203 @@ document.addEventListener('DOMContentLoaded', () => {
         image.style.width = width;
       } else {
         image.style.removeProperty('width');
+=======
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
+          Helvetica, sans-serif, Oxygen, Ubuntu, Cantarell, "Fira Sans",
+          "Droid Sans", "Helvetica Neue";
+>>>>>>> 6f4d9e038b105ee88595be4aceadecc997493e89
       }
 
-      if (height) {
-        image.style.height = height;
-      } else {
-        image.style.removeProperty('height');
+      .hiddenimg {
+        display: none;
+        position: fixed;
+        right: 10px;
+        top: 40px;
       }
 
-      const top = project.dataset.imageTop;
-      const left = project.dataset.imageLeft;
-      const right = project.dataset.imageRight;
-
-      if (top === '100%') {
-        image.style.top = 'auto';
-        image.style.bottom = 0;
-      } else {
-        image.style.top = top ? top : '50%';
-        image.style.bottom = 'auto';
+      .project {
+        font-weight: normal;
+        color: rgb(0, 0, 0);
+        z-index: 99;
       }
 
-      image.style.left = left ? left : '50%';
-      image.style.right = right ? right : 'auto';
+      .project a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+      }
 
-      image.style.visibility = 'visible';
+      .project:hover ~ .hiddenimg {
+        display: block;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        bottom: 10px;
+      }
 
-      adjustImagePosition(project);
-    });
+      .header-container {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: clamp(15px, 2vw, 15px);
+        z-index: 100;
+      }
 
-    project.addEventListener('mouseout', () => {
-      image.src = '';
-      image.style.visibility = 'hidden';
-    });
-  });
-});
+      .cv-link {
+        color: #000000;
+        text-decoration: none;
+      }
 
+      .cv-link:hover,
+      .cv-link:active {
+        color: #ff0000;
+        text-decoration: none;
+        /* Set hover and active link color */
+      }
 
-  </script>
+      .container {
+        position: absolute;
+        height: auto;
+        top: 60px;
+        left: 10px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: 99;
+        float: right;
+      }
 
-</body>
+      .container .project {
+        display: inline-block;
+        white-space: wrap;
+        flex-shrink: 1;
+        line-height: 1.2; /* Set the line height to a fixed value */
+        padding-right: 5px;
+        font-size: clamp(40px, 5vw, 85px);
+        z-index: 999;
+      }
+
+      .cv-link {
+        color: #000000; /* Set initial link color */
+        text-decoration: none;
+      }
+
+      @media only screen and (max-width: 420px) {
+        /* mobile */
+
+        .header-container {
+          left: 10px;
+          right: 10px;
+          top: 0px;
+          background-color: white;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+
+        .container {
+          justify-content: left;
+          top: 46px;
+          left: 10px;
+          right: 10px;
+        }
+
+        .project:hover ~ .hiddenimg {
+          display: none;
+          position: fixed;
+          right: 10px;
+          top: 10px;
+          bottom: 10px;
+        }
+      }
+
+      .project:hover,
+      .project:active {
+        color: #ff0000; /* Set hover and active link color */
+        text-decoration: none;
+      }
+
+      @media screen and (max-width: 420px) {
+        .project:hover,
+        .project:active {
+          color: #000000; /* Set hover and active link color */
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="left-text"><a>ANIA SHEKHVATOVA</a></div>
+      <a class="right-text cv-link" href="CV.html">CV</a>
+    </div>
+    <div class="container">
+      <div>
+        <span class="project">
+          <a href="/deep/" class="project">deep dive room_</a></span
+        >
+        <span class="hiddenimg" style="position: fixed; top: 80px; right: 10px"
+          ><img src="deep2.jpeg" style="width: 30vw; height: auto"
+        /></span>
+      </div>
+      <div>
+        <span class="project"><a href="/kaffa/" class="project">kaffa_</a></span
+        ><span class="hiddenimg" style="position: fixed; top: 80px; right: 10px"
+          ><img src="kaffa2.jpeg" style="width: 30vw; height: auto"
+        /></span>
+      </div>
+      <div>
+        <span class="project"
+          ><a href="/randomt/" class="project">random t room_</a></span
+        ><span class="hiddenimg" style="position: fixed; top: 80px; right: 10px"
+          ><img src="randomt2.jpeg" style="width: 30vw; height: auto"
+        /></span>
+      </div>
+      <div>
+        <span class="project"
+          ><a href="/stilllife/" class="project"
+            >still life coffee situation_</a
+          ></span
+        ><span class="hiddenimg" style="position: fixed; top: 80px; right: 10px"
+          ><img src="still.jpeg" style="width: 30vw; height: auto"
+        /></span>
+      </div>
+      <div>
+        <span class="project"
+          ><a href="/collection/" class="project"
+            >collection of inedible desserts_</a
+          ></span
+        ><span class="hiddenimg" style="position: fixed; top: 80px; right: 10px"
+          ><img src="collection2.jpeg" style="width: 30vw; height: auto"
+        /></span>
+      </div>
+      <div>
+        <span class="project"
+          ><a href="/defect/" class="project">defect coffee shop_</a></span
+        ><span class="hiddenimg" style="position: fixed; top: 80px; right: 10px"
+          ><img src="deffect2.jpeg" style="width: 30vw; height: auto"
+        /></span>
+      </div>
+      <div>
+        <span class="project"
+          ><a href="/random/" class="project"
+            >random coffee experiments_</a
+          ></span
+        ><span class="hiddenimg" style="position: fixed; top: 80px; right: 10px"
+          ><img src="random2.jpeg" style="width: 30vw; height: auto"
+        /></span>
+      </div>
+      <div>
+        <span class="project"
+          ><a href="/420/" class="project">420 coffeeshop_</a></span
+        ><span class="hiddenimg" style="position: fixed; top: 80px; right: 10px"
+          ><img src="420b.jpeg" style="width: 30vw; height: auto"
+        /></span>
+      </div>
+    </div>
+  </body>
 </html>

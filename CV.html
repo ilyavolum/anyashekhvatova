@@ -1,129 +1,128 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
-    <title>CV</title>
-    <meta name="description" content="CV" />
-    <meta property="og:title" content="CV" />
-    <meta property="og:url" content="{url}" />
-    <meta property="og:image" content="{imageSrc}" />
-    <meta property="og:image:width" content="{imageWidth}" />
-    <meta property="og:image:height" content="{imageHeight}" />
-    <meta property="og:description" content="CV" />
-    <meta name="twitter:title" content="CV" />
-    <meta name="twitter:url" content="{url}" />
-    <meta name="twitter:image" content="{imageSrc}" />
-    <meta name="twitter:image:width" content="{imageWidth}" />
-    <meta name="twitter:image:height" content="{imageHeight}" />
-    <meta name="twitter:description" content="{description}" />
-    <link rel="image_src" href="{imageSrc}" />
-    <link rel="canonical" href="{url}" />
-    <meta name="keywords" content="still life" />
-    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-    <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="aniashekhvatova" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      h2 {
-        font-size: clamp(15px, 2vw, 15px);
-      }
+<head>
+  <link href="https://fonts.googleapis.com/css?family=SF+UI+Display&display=swap" rel="stylesheet">
+  <style>
+h1 {
+  font-size: 1.8vmax;
+}
+h2 {
+  font-size: 1.8vmax;
+}
+h3 {
+  font-size: 1.8vmax;
+}
+    body {
+      font-family: 'SF UI Display', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-      body {
-        -webkit-font-smoothing: antialiased;
-        margin: 0;
-        padding: 0;
+    .header-container {
+      position: fixed;
+      top: 16px;
+      left: 20px;
+      right: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 20px;
+    }
 
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
-          Helvetica, sans-serif, Oxygen, Ubuntu, Cantarell, "Fira Sans",
-          "Droid Sans", "Helvetica Neue";
-      }
-      .header-container {
-        position: fixed;
-        top: 16px;
-        left: 20px;
-        right: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: clamp(15px, 2vw, 15px);
-        z-index: 3;
-      }
+    .left-text {
+      font-size: 20px;
+      color: #000000; /* Set initial link color */
+      text-decoration: none;
+    }
+    .left-text:hover,
+    .left-text:active {
+      color: #FF0000;
+      text-decoration: none;
+    }
 
-      .cv-link {
-        color: #000000;
-        text-decoration: none;
-      }
+    .cv-link {
+    color: #000000;
+    /* Set initial link color */
+    text-decoration: none;
+  }
 
-      .cv-link:hover,
-      .cv-link:active {
-        color: #ff0000;
-        text-decoration: none;
-        /* Set hover and active link color */
-      }
-      .cv-container {
-        position: absolute;
-        top: 52px;
-        left: 10px;
-        right: 20px;
-        display: flex;
-        justify-content: left;
-        flex-flow: row wrap;
-        align-items: left;
-        max-width: 700px;
-        float: right;
-      }
+  .cv-link:hover,
+  .cv-link:active {
+    color: #FF0000;
+    /* Set hover and active link color */
+  }
+    .footer {
+    position: fixed;
+    bottom: 16px;
+    left: 20px;
+    font-size: 20px;
+    z-index: 2;
+    text-decoration: none;
+  }
 
-      .cv-container h2 {
-        justify-content: left;
-        text-decoration: none;
-        font-weight: 400;
-        margin-top: 0;
-      }
+    .right-text {
+      font-size: 20px;
+      color: #FF0000;
+    }
 
-      .cv-container p {
-        margin: 0;
-      }
+    .cv-container {
+      position: fixed;
 
-      /* Mobile Styles */
-      @media only screen and (min-width: 300px) {
-        .header-container {
-          left: 10px;
-          right: 10px;
-          top: 0px;
-          background-color: white;
-          padding-top: 10px;
-          padding-bottom: 10px;
-        }
-      }
-      @media only screen and (min-width: 1000px) {
-        .header-container {
-          left: 10px;
-          right: 10px;
-          top: 0px;
-          padding-top: 10px;
-          padding-bottom: 10px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="header-container">
-      <div class="left-text">
-        <a href="/" class="cv-link">ANIA SHEKHVATOVA</a>
-      </div>
-      <a class="right-text cv-link" href="/CV.html" style="color: #ff0000"
-        >CV</a
-      >
-    </div>
+
+      top: 84px;
+      left: 20px;
+      right: 200px;
+      display: flex;
+      justify-content: left;
+      flex-flow: row wrap;
+
+      align-items: left;
+      background-color: none; /* Add background color */
+
+    }
+
+    .cv-container h1 {
+     justify-content: left;
+     text-decoration: none;
+     font-weight: 400; 
+     margin-top: 0;
+     margin-bottom: 50px;
+
+    }
+
+    .cv-container h2 {
+     justify-content: left;
+     text-decoration: none;
+     font-weight: 400;
+     margin-top: 0; 
+
+    }
+    .cv-container h3 {
+     justify-content: left;
+     text-decoration: none;
+     font-weight: 400;
+     margin-top: 0; 
+
+    }
+
+    .cv-container h3,
+    .cv-container p {
+      margin: 0;
+    }
+
+    .cv-container ul {
+      padding-left: 20px;
+      margin: 0;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header-container">
+    <a href="/" class="left-text">ANIA SHEKHVATOVA</a>
+    <div class="right-text">CV</div>
+  </div>
 
   <div class="cv-container">
     <h1>Born 1990 in Maiysky (North Caucasus, Russia)<p>
@@ -141,7 +140,6 @@ Lived in Moscow, Russia until 2022
     <p>She touches upon the themes of a human's place in the world, their sense of self, the connection between the spiritual, sensual, and physical. Through the use of temporality and ritualistic elements, she creates an ever-evolving narrative that challenges the viewer's perception of the world. As she creates her art, Anya investigates how a person's viewpoint can be altered by the unique environment they are immersed in.<p>
     <p>Anya employs a range of media, including traditional materials and new technologies, to create a multi-sensory experience for the viewer. Anya's approach to sensory perception extends beyond sight and sound, encompassing taste, touch, and smell to create a truly immersive artistic encounter.</h3>
   </div>
-  
 
   <div class="footer">
     <a href="/" class="cv-link">BACK</a>
